@@ -19,8 +19,8 @@
 echo 'src-git messense https://github.com/messense/aliyundrive-webdav' >>feeds.conf.default
 
 ## 修改image/mt7986.mk中的BLOCKSIZE := 128k为256k，PAGESIZE := 2048为4096，好像可有可无
-sed -i '/mt7986a-xiaomi-redmi-router-ax6000-uboot/{n;n;n;n;s/128k/256k/;}' target/linux/mediatek/image/mt7986.mk
-sed -i '/mt7986a-xiaomi-redmi-router-ax6000-uboot/{n;n;n;n;n;s/2048/4096/;}' target/linux/mediatek/image/mt7986.mk
+# sed -i '/mt7986a-xiaomi-redmi-router-ax6000-uboot/{n;n;n;n;s/128k/256k/;}' target/linux/mediatek/image/mt7986.mk
+# sed -i '/mt7986a-xiaomi-redmi-router-ax6000-uboot/{n;n;n;n;n;s/2048/4096/;}' target/linux/mediatek/image/mt7986.mk
 
 ## 修改DTS的ubi为490MB的0x1ea00000
 sed -i 's/reg = <0x600000 0x6e00000>/reg = <0x600000 0x1ea00000>/' target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/mt7986a-xiaomi-redmi-router-ax6000-uboot.dts
