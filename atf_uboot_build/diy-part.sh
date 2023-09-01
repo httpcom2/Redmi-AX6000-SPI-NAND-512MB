@@ -11,4 +11,4 @@ sed -i 's/112640k(ubi)/501760k(ubi)/' uboot-mtk-20220606/configs/mt7986_redmi_ax
 ## ----------------------------------------
 
 ## 修改nandinfo为4k+256，这个可有可无，不影响
-sed -i 's/nandinfo=2k+64/nandinfo=4k+256/' uboot-mtk-20220606/arch/arm/mach-mediatek/Kconfig
+## sed -i 's/nandinfo=2k+64/nandinfo=4k+256/' uboot-mtk-20220606/arch/arm/mach-mediatek/Kconfig
